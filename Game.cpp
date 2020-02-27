@@ -2,7 +2,7 @@
 
 #include "Game.h"
 
-#include "TextureHolder.cpp"
+#include "ResourceHolder.cpp"
 
 //temporary fix variable 
 sf::Texture textr;
@@ -11,7 +11,7 @@ Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mTexture(),
 {
 	speed = 75;
 	
-	TextureHolder textures;
+	ResourceHolder<sf::Texture, Textures::ID> textures;
 	
 	textures.load(Textures::Airplane, "plane.png");
 	
