@@ -13,13 +13,13 @@ void TextureHolder::load(Textures::ID id, const std::string& filename)
 	}
 	
 	auto inserted = mTextureMap.insert(std::make_pair(id, std::move(texture))); 
-	assert(inserted.second);
+	assert(inserted.second); 
 }
 
 sf::Texture& TextureHolder::get(Textures::ID id)
 {
-	auto found = mTextureMap.find(id);
-	assert(found != mTextureMap.end());
-	
-	return *(found->second);
+    auto found = mTextureMap.find(id);
+    assert(found != mTextureMap.end());
+
+    return *found->second; 
 }

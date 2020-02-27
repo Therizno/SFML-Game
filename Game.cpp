@@ -4,6 +4,8 @@
 
 #include "TextureHolder.cpp"
 
+//temporary fix variable 
+sf::Texture textr;
 
 Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mTexture(), mPlayer()
 {
@@ -13,7 +15,9 @@ Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mTexture(),
 	
 	textures.load(Textures::Airplane, "plane.png");
 	
-	mPlayer.setTexture(textures.get(Textures::Airplane));
+	textr = textures.get(Textures::Airplane);
+    
+	mPlayer.setTexture(textr);
 	mPlayer.setPosition(100.0f, 100.0f);
 }
 
