@@ -13,6 +13,8 @@
 		9053D5552411A4B40006F5FE /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 9053D5542411A4B40006F5FE /* nice_music.ogg */; };
 		9053D5572411A4B40006F5FE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9053D5562411A4B40006F5FE /* sansation.ttf */; };
 		9053D5592411A4B40006F5FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9053D5582411A4B40006F5FE /* icon.png */; };
+		90C163892411BB3C00A48919 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163852411BB3C00A48919 /* Game.cpp */; };
+		90C1638A2411BB3C00A48919 /* ResourceHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163882411BB3C00A48919 /* ResourceHolder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		9053D5542411A4B40006F5FE /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
 		9053D5562411A4B40006F5FE /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
 		9053D5582411A4B40006F5FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		90C163852411BB3C00A48919 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		90C163862411BB3C00A48919 /* ResourceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceHolder.h; sourceTree = "<group>"; };
+		90C163872411BB3C00A48919 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		90C163882411BB3C00A48919 /* ResourceHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceHolder.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		9053D5492411A4B40006F5FE /* SFML-Game */ = {
 			isa = PBXGroup;
 			children = (
+				90C163852411BB3C00A48919 /* Game.cpp */,
+				90C163872411BB3C00A48919 /* Game.h */,
+				90C163882411BB3C00A48919 /* ResourceHolder.cpp */,
+				90C163862411BB3C00A48919 /* ResourceHolder.h */,
 				9053D54C2411A4B40006F5FE /* ResourcePath.mm */,
 				9053D54E2411A4B40006F5FE /* ResourcePath.hpp */,
 				9053D54F2411A4B40006F5FE /* main.cpp */,
@@ -177,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C163892411BB3C00A48919 /* Game.cpp in Sources */,
+				90C1638A2411BB3C00A48919 /* ResourceHolder.cpp in Sources */,
 				9053D5502411A4B40006F5FE /* main.cpp in Sources */,
 				9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */,
 			);
