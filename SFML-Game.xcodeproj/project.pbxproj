@@ -67,9 +67,9 @@
 				90C163872411BB3C00A48919 /* Game.h */,
 				90C163882411BB3C00A48919 /* ResourceHolder.cpp */,
 				90C163862411BB3C00A48919 /* ResourceHolder.h */,
-				9053D54C2411A4B40006F5FE /* ResourcePath.mm */,
-				9053D54E2411A4B40006F5FE /* ResourcePath.hpp */,
 				9053D54F2411A4B40006F5FE /* main.cpp */,
+				9053D54E2411A4B40006F5FE /* ResourcePath.hpp */,
+				9053D54C2411A4B40006F5FE /* ResourcePath.mm */,
 				9053D5512411A4B40006F5FE /* Resources */,
 				9053D54A2411A4B40006F5FE /* Supporting Files */,
 			);
@@ -288,20 +288,28 @@
 		9053D55D2411A4B40006F5FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SFML-Game/SFML-Game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
 		9053D55E2411A4B40006F5FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SFML-Game/SFML-Game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
