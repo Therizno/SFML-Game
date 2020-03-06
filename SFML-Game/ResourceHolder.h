@@ -1,6 +1,6 @@
 #include <string>
 #include <map>
-#include <iostream>
+
 #include "ResourcePath.hpp"
 
 namespace Textures
@@ -18,7 +18,6 @@ class ResourceHolder
 	
 			if(!resource -> loadFromFile(resourcePath() + filename))
 			{
-                std::cout << "resource path: "<< resourcePath();
 				throw std::runtime_error("ResourceHolder::load - Failed to load "+filename);
 			}
 	
