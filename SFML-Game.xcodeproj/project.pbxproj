@@ -281,6 +281,7 @@
 				INFOPLIST_FILE = "SFML-Game/SFML-Game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = "chief.SFML-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				USE_HEADERMAP = NO;
@@ -295,6 +296,7 @@
 				INFOPLIST_FILE = "SFML-Game/SFML-Game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = "chief.SFML-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				USE_HEADERMAP = NO;
