@@ -10,6 +10,8 @@
 		9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9053D54C2411A4B40006F5FE /* ResourcePath.mm */; };
 		9053D5502411A4B40006F5FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9053D54F2411A4B40006F5FE /* main.cpp */; };
 		905E03112411CBA0003DEF24 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E03102411CBA0003DEF24 /* plane.png */; };
+		905E03142412FAA6003DEF24 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 905E03132412FAA6003DEF24 /* Entity.cpp */; };
+		905E03172412FD2D003DEF24 /* Aircraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 905E03152412FD2D003DEF24 /* Aircraft.cpp */; };
 		90C163892411BB3C00A48919 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163852411BB3C00A48919 /* Game.cpp */; };
 		90C1638A2411BB3C00A48919 /* ResourceHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163882411BB3C00A48919 /* ResourceHolder.cpp */; };
 /* End PBXBuildFile section */
@@ -21,6 +23,10 @@
 		9053D54E2411A4B40006F5FE /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		9053D54F2411A4B40006F5FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		905E03102411CBA0003DEF24 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plane.png; path = "SFML-Game/plane.png"; sourceTree = SOURCE_ROOT; };
+		905E03122412F99D003DEF24 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		905E03132412FAA6003DEF24 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		905E03152412FD2D003DEF24 /* Aircraft.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Aircraft.cpp; sourceTree = "<group>"; };
+		905E03162412FD2D003DEF24 /* Aircraft.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Aircraft.hpp; sourceTree = "<group>"; };
 		90C163852411BB3C00A48919 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		90C163862411BB3C00A48919 /* ResourceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceHolder.h; sourceTree = "<group>"; };
 		90C163872411BB3C00A48919 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 				90C163872411BB3C00A48919 /* Game.h */,
 				90C163882411BB3C00A48919 /* ResourceHolder.cpp */,
 				90C163862411BB3C00A48919 /* ResourceHolder.h */,
+				905E03122412F99D003DEF24 /* Entity.h */,
+				905E03132412FAA6003DEF24 /* Entity.cpp */,
+				905E03162412FD2D003DEF24 /* Aircraft.hpp */,
+				905E03152412FD2D003DEF24 /* Aircraft.cpp */,
 				9053D54F2411A4B40006F5FE /* main.cpp */,
 				9053D54E2411A4B40006F5FE /* ResourcePath.hpp */,
 				9053D54C2411A4B40006F5FE /* ResourcePath.mm */,
@@ -178,7 +188,9 @@
 				90C163892411BB3C00A48919 /* Game.cpp in Sources */,
 				90C1638A2411BB3C00A48919 /* ResourceHolder.cpp in Sources */,
 				9053D5502411A4B40006F5FE /* main.cpp in Sources */,
+				905E03142412FAA6003DEF24 /* Entity.cpp in Sources */,
 				9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */,
+				905E03172412FD2D003DEF24 /* Aircraft.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
