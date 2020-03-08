@@ -30,6 +30,7 @@ const std::string& filename, const Parameter& secondParam)
     assert(inserted.second);
 }
 
+/*
 template <typename Resource, typename Identifier>
 Resource& ResourceHolder<Resource, Identifier>::get(Identifier id)
 {
@@ -37,7 +38,8 @@ Resource& ResourceHolder<Resource, Identifier>::get(Identifier id)
     assert(found != mResourceMap.end());
 
     return *found->second;
-}
+}*/
+
 
 template <typename Resource, typename Identifier>
 const Resource& ResourceHolder<Resource, Identifier>::get(Identifier id) const
