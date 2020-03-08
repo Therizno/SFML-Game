@@ -18,16 +18,30 @@ class SceneNode : public sf::Transformable, public sf::Drawable, private sf::Non
     
     public:
         SceneNode();
+        
         void attachChild(Ptr child);
         Ptr detatchChild(const SceneNode& node);
+        
+        void update(sf::Time dt);
+        
     
     private:
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-        virtual void drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const; 
+        virtual void drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
+        
+        virtual void updateCurrent(sf::Time dt);
+        void updateChildren(sf::Time dt);
+        
     
     private:
         std::vector<Ptr> mChildren;
         SceneNode* mParent;
+};
+
+
+enum Layer
+{
+    Background, Air, LayerCount
 };
 
 #endif /* SceneNode_hpp */
