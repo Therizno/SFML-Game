@@ -11,7 +11,7 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "ResourceHolder.h"
+#include "ResourceHolder.cpp"
 
 #include "Entity.h"
 

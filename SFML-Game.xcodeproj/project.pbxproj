@@ -76,12 +76,12 @@
 		9053D5492411A4B40006F5FE /* SFML-Game */ = {
 			isa = PBXGroup;
 			children = (
-				90C163852411BB3C00A48919 /* Game.cpp */,
 				90137B7A2415E80E00997537 /* SpriteNode.hpp */,
 				90137B792415E80E00997537 /* SpriteNode.cpp */,
 				90137B7D2415EC5E00997537 /* World.hpp */,
 				90137B7C2415EC5E00997537 /* World.cpp */,
 				90C163872411BB3C00A48919 /* Game.h */,
+				90C163852411BB3C00A48919 /* Game.cpp */,
 				90C163882411BB3C00A48919 /* ResourceHolder.cpp */,
 				90C163862411BB3C00A48919 /* ResourceHolder.h */,
 				905E03122412F99D003DEF24 /* Entity.h */,

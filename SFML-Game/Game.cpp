@@ -1,24 +1,10 @@
 
 #include "Game.h"
 
-#include "ResourceHolder.cpp"
-
 //temporary fix variable 
 sf::Texture textr;
 
-Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer()
-{
-	speed = 75;
-	
-	Textures::TextureHolder textures;
-	
-	textures.load(Textures::Airplane, "plane.png");
-	
-	textr = textures.get(Textures::Airplane);
-    
-	mPlayer.setTexture(textr);
-	mPlayer.setPosition(100.0f, 100.0f);
-}
+Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer(), mWorld(mWindow) {}
 
 void Game :: run()
 {
@@ -81,9 +67,11 @@ void Game::update(sf::Time deltaTime)
 
 void Game::render()
 {
-	mWindow.clear();
-	mWindow.draw(mPlayer);
-	mWindow.display();
+    mWindow.clear();
+    mWorld.draw();
+
+    mWindow.setView(mWindow.getDefaultView());
+    mWindow.display();
 }
 
 

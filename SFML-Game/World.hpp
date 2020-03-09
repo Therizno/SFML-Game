@@ -15,6 +15,7 @@
 
 #include "SceneNode.h"
 #include "Aircraft.hpp"
+#include "SpriteNode.hpp"
 
 
 class World : private sf::NonCopyable

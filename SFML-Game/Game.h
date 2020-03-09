@@ -1,5 +1,7 @@
 #include <SFML/Graphics.hpp>
 
+#include "World.hpp"
+
 class Game
 {
 	public:
@@ -21,4 +23,5 @@ class Game
 		const sf::Time TIME_PER_FRAME = sf::seconds(1.0f/60.0f);
 		sf::RenderWindow mWindow;
 		sf::Sprite mPlayer;
+        World mWorld;
 };
