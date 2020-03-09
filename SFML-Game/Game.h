@@ -20,6 +20,5 @@ class Game
 		float speed;
 		const sf::Time TIME_PER_FRAME = sf::seconds(1.0f/60.0f);
 		sf::RenderWindow mWindow;
-		sf::Texture mTexture;
 		sf::Sprite mPlayer;
 };

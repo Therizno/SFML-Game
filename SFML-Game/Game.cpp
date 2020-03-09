@@ -6,11 +6,11 @@
 //temporary fix variable 
 sf::Texture textr;
 
-Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mTexture(), mPlayer()
+Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer()
 {
 	speed = 75;
 	
-	ResourceHolder<sf::Texture, Textures::ID> textures;
+	Textures::TextureHolder textures;
 	
 	textures.load(Textures::Airplane, "plane.png");
 	

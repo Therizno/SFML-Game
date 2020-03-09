@@ -42,9 +42,4 @@ class SceneNode : public sf::Transformable, public sf::Drawable, private sf::Non
 };
 
 
-enum Layer
-{
-    Background, Air, LayerCount
-};
-
 #endif /* SceneNode_hpp */

@@ -1,7 +1,18 @@
 #include "Game.h"
 
+#include <stdexcept>
+#include <iostream>
+
 int main()
 {
-	Game game;
-	game.run();
+    try
+    {
+        Game game;
+        game.run();
+    }
+    catch (std::exception& e)
+    {
+        std::cout << "\nException: " << e.what() << std::endl;
+    }
+    
 }
