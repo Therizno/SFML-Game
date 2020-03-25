@@ -2,6 +2,9 @@
 
 #include "World.hpp"
 
+#include "Player.hpp"
+
+
 class Game
 {
 	public:
@@ -18,6 +21,6 @@ class Game
 		float speed;
 		const sf::Time TIME_PER_FRAME = sf::seconds(1.0f/60.0f);
 		sf::RenderWindow mWindow;
-		sf::Sprite mPlayer;
+		Player mPlayer;
         World mWorld;
 };

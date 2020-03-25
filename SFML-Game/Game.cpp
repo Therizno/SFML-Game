@@ -37,10 +37,14 @@ void Game :: run()
 
 void Game :: processEvents()
 {
+    CommandQueue& commands = mWorld.getCommandQueue();
+    
 	sf::Event event;
 	
 	while (mWindow.pollEvent(event))
 	{
+        mPlayer.handleEvent(event, commands);
+ 
 		switch (event.type)
 		{
 			case sf::Event::Closed:
@@ -54,25 +58,13 @@ void Game :: processEvents()
                 break;
 		}
 
+        mPlayer.handleRealtimeInput(commands);
 	}
 }
 
 void Game::update(sf::Time deltaTime)
 {
     mWorld.update(deltaTime);
-
-	sf::Vector2f movement(0.0f, 0.0f);
-	
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-        movement.y -= speed;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-        movement.x -= speed;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-        movement.x += speed;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-        movement.y += speed;
-		
-	mPlayer.move(movement * deltaTime.asSeconds());
 }
 
 void Game::render()
