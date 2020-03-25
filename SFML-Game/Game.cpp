@@ -35,12 +35,6 @@ void Game :: processEvents()
 	{
 		switch (event.type)
 		{
-			case sf::Event::KeyPressed:
-				handlePlayerInput(event.key.code, true);
-				break;
-			case sf::Event::KeyReleased:
-				handlePlayerInput(event.key.code, false);
-				break;
 			case sf::Event::Closed:
 				mWindow.close();
 				break;
@@ -51,16 +45,18 @@ void Game :: processEvents()
 
 void Game::update(sf::Time deltaTime)
 {
+    mWorld.update(deltaTime);
+
 	sf::Vector2f movement(0.0f, 0.0f);
 	
-	if(mIsMovingUp)
-		movement.y -= speed;
-	if(mIsMovingLeft)
-		movement.x -= speed;
-	if(mIsMovingRight)
-		movement.x += speed;
-	if(mIsMovingDown)
-		movement.y += speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+        movement.y -= speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+        movement.x -= speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+        movement.x += speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+        movement.y += speed;
 		
 	mPlayer.move(movement * deltaTime.asSeconds());
 }
@@ -75,22 +71,4 @@ void Game::render()
 }
 
 
-void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
-{
-	switch (key) 
-	{ 
-		case sf::Keyboard::W:
-			mIsMovingUp = isPressed;
-			break;
-		case sf::Keyboard::A:
-			mIsMovingLeft = isPressed;
-			break;
-		case sf::Keyboard::D:
-			mIsMovingRight = isPressed;
-			break;
-		case sf::Keyboard::S:
-			mIsMovingDown = isPressed;
-			break;
-	}
-}
 
