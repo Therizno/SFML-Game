@@ -25,24 +25,35 @@ struct AircraftMover
     }
 };
 
+Player::Player() 
+{
+    const float playerSpeed = 250.f;
+    
+    mKeyBinding[sf::Keyboard::Left] = MoveLeft;
+    mKeyBinding[sf::Keyboard::Right] = MoveRight;
+
+    mActionBinding[MoveLeft].action = derivedAction<Aircraft>(AircraftMover(-playerSpeed, 0.f));
+    mActionBinding[MoveRight].action = derivedAction<Aircraft>(AircraftMover(+playerSpeed, 0.f));
+       
+       for (auto& pair : mActionBinding)
+           pair.second.category = Category::PlayerAircraft;
+}
+
 void Player::handleRealtimeInput(CommandQueue& commands)
 {
-    const float playerSpeed = 30.f;
-    
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+    for(auto pair : mKeyBinding)
     {
-        Command moveLeft;
-        moveLeft.category = Category::PlayerAircraft;
-        moveLeft.action = derivedAction<Aircraft>(AircraftMover(-playerSpeed, 0.f));
-        commands.push(moveLeft);
+        if (sf::Keyboard::isKeyPressed(pair.first) && isRealTimeAction(pair.second))
+        {
+            commands.push(mActionBinding[pair.second]);
+        }
     }
 }
 
 void Player::handleEvent(const sf::Event& event,
                             CommandQueue& commands)
-   {
-       if (event.type == sf::Event::KeyPressed
-        && event.key.code == sf::Keyboard::P)
+{
+       if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::P)
        {
            Command output;
            output.category = Category::PlayerAircraft;
@@ -54,3 +65,48 @@ void Player::handleEvent(const sf::Event& event,
            commands.push(output);
        }
  }
+
+
+void Player::assignKey(Action action, sf::Keyboard::Key key)
+{
+    // Remove all keys that already map to action
+    for (auto itr = mKeyBinding.begin(); itr != mKeyBinding.end(); )
+    {
+        if (itr->second == action)
+            mKeyBinding.erase(itr++);
+        else
+            ++itr;
+    }
+
+    // Insert new binding
+    mKeyBinding[key] = action;
+}
+
+sf::Keyboard::Key Player::getAssignedKey(Action action) const
+{
+    for(auto pair : mKeyBinding)
+    {
+        if (pair.second == action)
+            return pair.first;
+    }
+
+    return sf::Keyboard::Unknown;
+}
+
+
+bool Player::isRealTimeAction(Action action)
+{
+    switch (action)
+    {
+        case MoveLeft:
+        case MoveRight:
+        case MoveDown:
+        case MoveUp:
+            return true;
+
+        default:
+            return false;
+    }
+}
+
+
