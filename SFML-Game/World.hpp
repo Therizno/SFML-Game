@@ -16,6 +16,7 @@
 #include "SceneNode.h"
 #include "Aircraft.hpp"
 #include "SpriteNode.hpp"
+#include "CommandQueue.hpp"
 
 
 class World : private sf::NonCopyable
@@ -24,6 +25,7 @@ class World : private sf::NonCopyable
         explicit World(sf::RenderWindow& window);
         void update(sf::Time dt);
         void draw();
+        CommandQueue& getCommandQueue();
         
     private:
         void loadTextures();
@@ -46,6 +48,8 @@ class World : private sf::NonCopyable
         sf::Vector2f mSpawnPosition;
         float mScrollSpeed;
         Aircraft* mPlayerAircraft;
+        
+        CommandQueue mCommandQueue;
         
 };
 
