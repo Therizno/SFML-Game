@@ -14,6 +14,7 @@ class Game
 		void render();
 		
 	private:
+        bool mPaused;
 		float speed;
 		const sf::Time TIME_PER_FRAME = sf::seconds(1.0f/60.0f);
 		sf::RenderWindow mWindow;

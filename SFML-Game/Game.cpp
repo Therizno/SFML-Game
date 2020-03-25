@@ -13,17 +13,25 @@ void Game :: run()
 	
 	while (mWindow.isOpen())
 	{
-		timeSinceLastUpdate += clock.restart();
+        if(!mPaused){
+        
+            timeSinceLastUpdate += clock.restart();
 		
-		while (timeSinceLastUpdate > TIME_PER_FRAME)
-		{
-			processEvents();
-			update(TIME_PER_FRAME);
+            while (timeSinceLastUpdate > TIME_PER_FRAME)
+            {
+                processEvents();
+                update(TIME_PER_FRAME);
 		
-			timeSinceLastUpdate -= TIME_PER_FRAME;
-		}
+                timeSinceLastUpdate -= TIME_PER_FRAME;
+            }
 		
-		render();
+            render();
+        }
+        else
+        {
+            processEvents();
+            clock.restart();
+        }
 	}
 }
 
@@ -38,6 +46,12 @@ void Game :: processEvents()
 			case sf::Event::Closed:
 				mWindow.close();
 				break;
+            case sf::Event::GainedFocus:
+                mPaused = false;
+                break;
+            case sf::Event::LostFocus:
+                mPaused = true;
+                break;
 		}
 
 	}
