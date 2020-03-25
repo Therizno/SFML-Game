@@ -11,6 +11,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Category.h"
+
 class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable
 {
     public:
@@ -26,6 +28,8 @@ class SceneNode : public sf::Transformable, public sf::Drawable, private sf::Non
         
         sf::Transform getWorldTransform() const;
         sf::Vector2f getWorldPosition() const;
+        
+        virtual unsigned int getCategory() const;
         
     
     private:
