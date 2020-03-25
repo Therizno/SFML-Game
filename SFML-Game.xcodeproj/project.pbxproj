@@ -12,6 +12,7 @@
 		90137B812416070200997537 /* enemy_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 90137B7F2416070200997537 /* enemy_plane.png */; };
 		90137B822416070200997537 /* sand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90137B802416070200997537 /* sand.jpg */; };
 		90234A4E242B4150002DF043 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90234A4C242B4150002DF043 /* Command.cpp */; };
+		90234A52242B4A77002DF043 /* CommandQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90234A50242B4A77002DF043 /* CommandQueue.cpp */; };
 		9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9053D54C2411A4B40006F5FE /* ResourcePath.mm */; };
 		9053D5502411A4B40006F5FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9053D54F2411A4B40006F5FE /* main.cpp */; };
 		905E03112411CBA0003DEF24 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 905E03102411CBA0003DEF24 /* plane.png */; };
@@ -32,6 +33,8 @@
 		90234A4C242B4150002DF043 /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		90234A4D242B4150002DF043 /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
 		90234A4F242B43BA002DF043 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		90234A50242B4A77002DF043 /* CommandQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandQueue.cpp; sourceTree = "<group>"; };
+		90234A51242B4A77002DF043 /* CommandQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CommandQueue.hpp; sourceTree = "<group>"; };
 		9053D5472411A4B40006F5FE /* SFML-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9053D54B2411A4B40006F5FE /* SFML-Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SFML-Game-Info.plist"; path = "../SFML-Game-Info.plist"; sourceTree = "<group>"; };
 		9053D54C2411A4B40006F5FE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				9053D54F2411A4B40006F5FE /* main.cpp */,
 				9053D54E2411A4B40006F5FE /* ResourcePath.hpp */,
 				9053D54C2411A4B40006F5FE /* ResourcePath.mm */,
+				90234A51242B4A77002DF043 /* CommandQueue.hpp */,
+				90234A50242B4A77002DF043 /* CommandQueue.cpp */,
 				9053D5512411A4B40006F5FE /* Resources */,
 				9053D54A2411A4B40006F5FE /* Supporting Files */,
 			);
@@ -225,6 +230,7 @@
 				9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */,
 				905E03172412FD2D003DEF24 /* Aircraft.cpp in Sources */,
 				90234A4E242B4150002DF043 /* Command.cpp in Sources */,
+				90234A52242B4A77002DF043 /* CommandQueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

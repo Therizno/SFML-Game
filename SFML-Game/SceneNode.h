@@ -12,6 +12,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "Category.h"
+#include "Command.hpp"
 
 class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable
 {
@@ -30,6 +31,8 @@ class SceneNode : public sf::Transformable, public sf::Drawable, private sf::Non
         sf::Vector2f getWorldPosition() const;
         
         virtual unsigned int getCategory() const;
+        
+        void onCommand(const Command& command, sf::Time dt);
         
     
     private:
