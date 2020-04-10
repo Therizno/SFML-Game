@@ -35,33 +35,33 @@ class State
         {
             Context(sf::RenderWindow& window, Textures::TextureHolder& textures, Fonts::FontHolder& fonts, Player& player);
 
-            sf::RenderWindow*    window;
-            Textures::TextureHolder*        textures;
-            Fonts::FontHolder*            fonts;
-            Player*                player;
+            sf::RenderWindow* window;
+            Textures::TextureHolder* textures;
+            Fonts::FontHolder* fonts;
+            Player* player;
         };
 
 
     public:
-                            State(StateStack& stack, Context context);
-        virtual                ~State();
+        State(StateStack& stack, Context context);
+        virtual ~State();
 
-        virtual void        draw() = 0;
-        virtual bool        update(sf::Time dt) = 0;
-        virtual bool        handleEvent(const sf::Event& event) = 0;
+        virtual void draw() = 0;
+        virtual bool update(sf::Time dt) = 0;
+        virtual bool handleEvent(const sf::Event& event) = 0;
 
 
     protected:
-        void                requestStackPush(States::ID stateID);
-        void                requestStackPop();
-        void                requestStateClear();
+        void requestStackPush(States::ID stateID);
+        void requestStackPop();
+        void requestStateClear();
 
-        Context                getContext() const;
+        Context getContext() const;
 
 
     private:
-        StateStack*            mStack;
-        Context                mContext;
+        StateStack* mStack;
+        Context mContext;
 };
 
 #endif /* State_hpp */
