@@ -38,8 +38,8 @@ class Application
         static const sf::Time TimePerFrame;
 
         sf::RenderWindow mWindow;
-        Textures::TextureHolder mTextures;
-        Fonts::FontHolder mFonts;
+        TextureHolder mTextures;
+        FontHolder mFonts;
         Player mPlayer;
 
         StateStack mStateStack;

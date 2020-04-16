@@ -24,7 +24,7 @@ Textures::ID toTextureID(Aircraft::Type type)
 }
 
 
-Aircraft::Aircraft(Type type, const Textures::TextureHolder& textures) : mType(type), mSprite(textures.get(toTextureID(type)))
+Aircraft::Aircraft(Type type, const TextureHolder& textures) : mType(type), mSprite(textures.get(toTextureID(type)))
 {
     sf::FloatRect bounds = mSprite.getLocalBounds();
     mSprite.setOrigin(bounds.width / 2.f, bounds.height / 2.f);

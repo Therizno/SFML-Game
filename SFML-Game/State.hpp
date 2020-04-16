@@ -10,7 +10,8 @@
 #define State_hpp
 
 #include "StateIdentifiers.h"
-#include "ResourceHolder.inl"
+
+#include "ResourceIdentifiers.h"
 
 #include <SFML/System/Time.hpp>
 #include <SFML/Window/Event.hpp>
@@ -33,11 +34,11 @@ class State
 
         struct Context
         {
-            Context(sf::RenderWindow& window, Textures::TextureHolder& textures, Fonts::FontHolder& fonts, Player& player);
+            Context(sf::RenderWindow& window, TextureHolder& textures, FontHolder& fonts, Player& player);
 
             sf::RenderWindow* window;
-            Textures::TextureHolder* textures;
-            Fonts::FontHolder* fonts;
+            TextureHolder* textures;
+            FontHolder* fonts;
             Player* player;
         };
 

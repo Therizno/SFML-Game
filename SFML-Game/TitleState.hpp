@@ -9,7 +9,9 @@
 #ifndef TitleState_hpp
 #define TitleState_hpp
 
-#include "State.hpp"
+#include <SFML/Graphics.hpp>
+
+#include "StateStack.hpp"
 
 
 class TitleState : public State

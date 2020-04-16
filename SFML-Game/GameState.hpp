@@ -9,10 +9,12 @@
 #ifndef GameState_hpp
 #define GameState_hpp
 
-#include "World.hpp"
-#include "State.hpp"
+//#include "World.hpp"
 
 #include "Player.hpp"
+#include "TitleState.hpp"
+
+#include "World.hpp"
 
 class GameState : public State
 {

@@ -9,7 +9,7 @@
 #ifndef MenuState_hpp
 #define MenuState_hpp
 
-#include "State.hpp"
+#include "GameState.hpp"
 
 class MenuState : public State
 {

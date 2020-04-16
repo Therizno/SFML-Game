@@ -8,8 +8,6 @@
 
 #include "Application.hpp"
 
-#include "TitleState.hpp"
-#include "GameState.hpp"
 #include "MenuState.hpp" 
 
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);

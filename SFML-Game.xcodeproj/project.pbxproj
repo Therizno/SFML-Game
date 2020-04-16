@@ -70,6 +70,7 @@
 		90934EA0244656B600EE626C /* Utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utility.hpp; sourceTree = "<group>"; };
 		90934EA22446593D00EE626C /* MenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MenuState.cpp; sourceTree = "<group>"; };
 		90934EA32446593D00EE626C /* MenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MenuState.hpp; sourceTree = "<group>"; };
+		90934EA52448206E00EE626C /* ResourceIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceIdentifiers.h; sourceTree = "<group>"; };
 		90BF319E242B4FAD003D0FAC /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		90BF319F242B4FAD003D0FAC /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		90C163852411BB3C00A48919 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				90234A4F242B43BA002DF043 /* Category.h */,
 				90234A4D242B4150002DF043 /* Command.hpp */,
 				90234A4C242B4150002DF043 /* Command.cpp */,
+				90934EA52448206E00EE626C /* ResourceIdentifiers.h */,
 				90C163862411BB3C00A48919 /* ResourceHolder.h */,
 				90C163882411BB3C00A48919 /* ResourceHolder.inl */,
 				905E03122412F99D003DEF24 /* Entity.h */,
