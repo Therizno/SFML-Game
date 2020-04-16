@@ -23,7 +23,7 @@ class ResourceHolder
 
 namespace Textures
 {
-    enum ID { Landscape, Airplane, Missile, Eagle, Raptor, Desert };
+    enum ID { Landscape, Airplane, Missile, Eagle, Raptor, Desert, TitleScreen };
  
     typedef ResourceHolder<sf::Texture, ID> TextureHolder;
 }
