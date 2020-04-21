@@ -8,7 +8,8 @@
 
 #include "Application.hpp"
 
-#include "MenuState.hpp" 
+#include "MenuState.hpp"
+#include "PauseState.hpp"
 
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
 

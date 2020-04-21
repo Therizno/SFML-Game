@@ -26,6 +26,7 @@
 		90934E9E244624D900EE626C /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934E9C244624D900EE626C /* GameState.cpp */; };
 		90934EA1244656B600EE626C /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934E9F244656B600EE626C /* Utility.cpp */; };
 		90934EA42446593D00EE626C /* MenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934EA22446593D00EE626C /* MenuState.cpp */; };
+		90B5988D244F2038009700FC /* PauseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90B5988B244F2038009700FC /* PauseState.cpp */; };
 		90BF31A0242B4FAD003D0FAC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90BF319E242B4FAD003D0FAC /* Player.cpp */; };
 		90C163892411BB3C00A48919 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163852411BB3C00A48919 /* Game.cpp */; };
 		90C1638A2411BB3C00A48919 /* ResourceHolder.inl in Sources */ = {isa = PBXBuildFile; fileRef = 90C163882411BB3C00A48919 /* ResourceHolder.inl */; };
@@ -71,6 +72,8 @@
 		90934EA22446593D00EE626C /* MenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MenuState.cpp; sourceTree = "<group>"; };
 		90934EA32446593D00EE626C /* MenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MenuState.hpp; sourceTree = "<group>"; };
 		90934EA52448206E00EE626C /* ResourceIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceIdentifiers.h; sourceTree = "<group>"; };
+		90B5988B244F2038009700FC /* PauseState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PauseState.cpp; sourceTree = "<group>"; };
+		90B5988C244F2038009700FC /* PauseState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PauseState.hpp; sourceTree = "<group>"; };
 		90BF319E242B4FAD003D0FAC /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		90BF319F242B4FAD003D0FAC /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		90C163852411BB3C00A48919 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				90934E9C244624D900EE626C /* GameState.cpp */,
 				90934EA32446593D00EE626C /* MenuState.hpp */,
 				90934EA22446593D00EE626C /* MenuState.cpp */,
+				90B5988C244F2038009700FC /* PauseState.hpp */,
+				90B5988B244F2038009700FC /* PauseState.cpp */,
 			);
 			path = "SFML-Game";
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				9053D5502411A4B40006F5FE /* main.cpp in Sources */,
 				905E03142412FAA6003DEF24 /* Entity.cpp in Sources */,
 				90934EA42446593D00EE626C /* MenuState.cpp in Sources */,
+				90B5988D244F2038009700FC /* PauseState.cpp in Sources */,
 				90137B7B2415E80E00997537 /* SpriteNode.cpp in Sources */,
 				905E031A24133600003DEF24 /* SceneNode.cpp in Sources */,
 				9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */,
