@@ -32,7 +32,6 @@ class Application
         void update(sf::Time dt);
         void render();
 
-        void updateStatistics(sf::Time dt);
         void registerStates();
 
 

@@ -1,8 +1,6 @@
 
 #include "Game.h"
 
-//temporary fix variable 
-sf::Texture textr;
 
 Game::Game() : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer(), mWorld(mWindow) {}
 

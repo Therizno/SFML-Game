@@ -75,3 +75,27 @@ void StateStack::applyPendingChanges()
     
     mPendingList.clear(); 
 }
+
+
+void StateStack::pushState(States::ID stateID)
+{
+    mPendingList.push_back(PendingChange(Push, stateID));
+}
+
+void StateStack::popState()
+{
+    mPendingList.push_back(PendingChange(Pop));
+}
+
+void StateStack::clearStates()
+{
+    mPendingList.push_back(PendingChange(Clear));
+}
+
+bool StateStack::isEmpty() const
+{
+    return mStack.empty();
+}
+
+
+StateStack::PendingChange::PendingChange(Action action, States::ID stateID) : action(action), stateID(stateID) { }

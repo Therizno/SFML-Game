@@ -57,7 +57,6 @@ void Application::run()
                 mWindow.close();
         }
 
-        updateStatistics(dt);
         render();
     }
 }
