@@ -1,3 +1,6 @@
+#ifndef ResourceHolder_h
+#define ResourceHolder_h
+
 #include <string>
 #include <map>
 
@@ -34,3 +37,4 @@ class ResourceHolder
 };
 
 
+#endif

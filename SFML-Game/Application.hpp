@@ -14,6 +14,8 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Text.hpp>
 
+#include "ResourceHolder.inl"
+
 #include "Player.hpp"
 #include "StateStack.hpp"
 
