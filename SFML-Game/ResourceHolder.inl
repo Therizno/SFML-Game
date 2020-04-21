@@ -1,6 +1,8 @@
 #ifndef ResourceHolder_inl
 #define ResourceHolder_inl
 
+#include "ResourcePath.hpp"
+
 #include "ResourceHolder.h"
 
 template <typename Resource, typename Identifier>
@@ -8,7 +10,7 @@ void ResourceHolder<Resource, Identifier>::load(Identifier id, const std::string
 {
     // Create and load resource
     std::unique_ptr<Resource> resource(new Resource());
-    if (!resource->loadFromFile(filename))
+    if (!resource->loadFromFile(resourcePath() + filename))
         throw std::runtime_error("ResourceHolder::load - Failed to load " + filename);
 
     // If loading successful, insert resource to map
@@ -21,7 +23,7 @@ void ResourceHolder<Resource, Identifier>::load(Identifier id, const std::string
 {
     // Create and load resource
     std::unique_ptr<Resource> resource(new Resource());
-    if (!resource->loadFromFile(filename, secondParam))
+    if (!resource->loadFromFile(resourcePath() + filename, secondParam))
         throw std::runtime_error("ResourceHolder::load - Failed to load " + filename);
 
     // If loading successful, insert resource to map
