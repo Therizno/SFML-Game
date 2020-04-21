@@ -25,8 +25,8 @@ Application::Application()
 {
     mWindow.setKeyRepeatEnabled(false);
 
-    mFonts.load(Fonts::Main, "Media/Sansation.ttf");
-    mTextures.load(Textures::TitleScreen, "Media/Textures/TitleScreen.png");
+    mFonts.load(Fonts::Main, "Sansation.ttf");
+    mTextures.load(Textures::TitleScreen, "TitleScreen.jpg");
 
     mStatisticsText.setFont(mFonts.get(Fonts::Main));
     mStatisticsText.setPosition(5.f, 5.f);

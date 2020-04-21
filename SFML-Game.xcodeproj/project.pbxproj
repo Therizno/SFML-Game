@@ -27,6 +27,7 @@
 		90934EA1244656B600EE626C /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934E9F244656B600EE626C /* Utility.cpp */; };
 		90934EA42446593D00EE626C /* MenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934EA22446593D00EE626C /* MenuState.cpp */; };
 		90B5988D244F2038009700FC /* PauseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90B5988B244F2038009700FC /* PauseState.cpp */; };
+		90B59891244F36DB009700FC /* Titlescreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90B59890244F36DB009700FC /* Titlescreen.jpg */; };
 		90BF31A0242B4FAD003D0FAC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90BF319E242B4FAD003D0FAC /* Player.cpp */; };
 		90C163892411BB3C00A48919 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C163852411BB3C00A48919 /* Game.cpp */; };
 		90C1638A2411BB3C00A48919 /* ResourceHolder.inl in Sources */ = {isa = PBXBuildFile; fileRef = 90C163882411BB3C00A48919 /* ResourceHolder.inl */; };
@@ -74,6 +75,8 @@
 		90934EA52448206E00EE626C /* ResourceIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceIdentifiers.h; sourceTree = "<group>"; };
 		90B5988B244F2038009700FC /* PauseState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PauseState.cpp; sourceTree = "<group>"; };
 		90B5988C244F2038009700FC /* PauseState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PauseState.hpp; sourceTree = "<group>"; };
+		90B5988F244F338E009700FC /* Sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sansation.ttf; path = "SFML-Game/Sansation.ttf"; sourceTree = SOURCE_ROOT; };
+		90B59890244F36DB009700FC /* Titlescreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Titlescreen.jpg; path = "SFML-Game/Titlescreen.jpg"; sourceTree = SOURCE_ROOT; };
 		90BF319E242B4FAD003D0FAC /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		90BF319F242B4FAD003D0FAC /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		90C163852411BB3C00A48919 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 		9053D5512411A4B40006F5FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90B59890244F36DB009700FC /* Titlescreen.jpg */,
+				90B5988F244F338E009700FC /* Sansation.ttf */,
 				90137B7F2416070200997537 /* enemy_plane.png */,
 				90137B802416070200997537 /* sand.jpg */,
 				905E03102411CBA0003DEF24 /* plane.png */,
@@ -236,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B59891244F36DB009700FC /* Titlescreen.jpg in Resources */,
 				905E03112411CBA0003DEF24 /* plane.png in Resources */,
 				90137B822416070200997537 /* sand.jpg in Resources */,
 				90137B812416070200997537 /* enemy_plane.png in Resources */,
