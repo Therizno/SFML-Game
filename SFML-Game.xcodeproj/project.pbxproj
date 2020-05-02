@@ -19,6 +19,9 @@
 		905E03142412FAA6003DEF24 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 905E03132412FAA6003DEF24 /* Entity.cpp */; };
 		905E03172412FD2D003DEF24 /* Aircraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 905E03152412FD2D003DEF24 /* Aircraft.cpp */; };
 		905E031A24133600003DEF24 /* SceneNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 905E031824133600003DEF24 /* SceneNode.cpp */; };
+		9063E9C2245D1D7E00A9616A /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C0245D1D7E00A9616A /* Component.cpp */; };
+		9063E9C5245D23A300A9616A /* Container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C3245D23A300A9616A /* Container.cpp */; };
+		9063E9C8245D3F6400A9616A /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C6245D3F6400A9616A /* Label.cpp */; };
 		906A98DC243FEACB00BFD4A2 /* StateStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906A98DA243FEACB00BFD4A2 /* StateStack.cpp */; };
 		906A98E2243FF01700BFD4A2 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906A98E0243FF01700BFD4A2 /* State.cpp */; };
 		90934E982445F46F00EE626C /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934E962445F46F00EE626C /* Application.cpp */; };
@@ -57,6 +60,12 @@
 		905E03162412FD2D003DEF24 /* Aircraft.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Aircraft.hpp; sourceTree = "<group>"; };
 		905E031824133600003DEF24 /* SceneNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneNode.cpp; sourceTree = "<group>"; };
 		905E031924133600003DEF24 /* SceneNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneNode.h; sourceTree = "<group>"; };
+		9063E9C0245D1D7E00A9616A /* Component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		9063E9C1245D1D7E00A9616A /* Component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		9063E9C3245D23A300A9616A /* Container.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Container.cpp; sourceTree = "<group>"; };
+		9063E9C4245D23A300A9616A /* Container.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Container.hpp; sourceTree = "<group>"; };
+		9063E9C6245D3F6400A9616A /* Label.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Label.cpp; sourceTree = "<group>"; };
+		9063E9C7245D3F6400A9616A /* Label.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Label.hpp; sourceTree = "<group>"; };
 		906464BB243FFA57000DAEEA /* StateIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateIdentifiers.h; sourceTree = "<group>"; };
 		906A98DA243FEACB00BFD4A2 /* StateStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateStack.cpp; sourceTree = "<group>"; };
 		906A98DB243FEACB00BFD4A2 /* StateStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateStack.hpp; sourceTree = "<group>"; };
@@ -159,6 +168,12 @@
 				90934EA22446593D00EE626C /* MenuState.cpp */,
 				90B5988C244F2038009700FC /* PauseState.hpp */,
 				90B5988B244F2038009700FC /* PauseState.cpp */,
+				9063E9C1245D1D7E00A9616A /* Component.hpp */,
+				9063E9C0245D1D7E00A9616A /* Component.cpp */,
+				9063E9C4245D23A300A9616A /* Container.hpp */,
+				9063E9C3245D23A300A9616A /* Container.cpp */,
+				9063E9C7245D3F6400A9616A /* Label.hpp */,
+				9063E9C6245D3F6400A9616A /* Label.cpp */,
 			);
 			path = "SFML-Game";
 			sourceTree = "<group>";
@@ -280,17 +295,20 @@
 				90C1638A2411BB3C00A48919 /* ResourceHolder.inl in Sources */,
 				90934E9E244624D900EE626C /* GameState.cpp in Sources */,
 				90934E9B2445FDC500EE626C /* TitleState.cpp in Sources */,
+				9063E9C5245D23A300A9616A /* Container.cpp in Sources */,
 				90934E982445F46F00EE626C /* Application.cpp in Sources */,
 				90137B7E2415EC5E00997537 /* World.cpp in Sources */,
 				9053D5502411A4B40006F5FE /* main.cpp in Sources */,
 				905E03142412FAA6003DEF24 /* Entity.cpp in Sources */,
 				90934EA42446593D00EE626C /* MenuState.cpp in Sources */,
 				90B5988D244F2038009700FC /* PauseState.cpp in Sources */,
+				9063E9C8245D3F6400A9616A /* Label.cpp in Sources */,
 				90137B7B2415E80E00997537 /* SpriteNode.cpp in Sources */,
 				905E031A24133600003DEF24 /* SceneNode.cpp in Sources */,
 				9053D54D2411A4B40006F5FE /* ResourcePath.mm in Sources */,
 				906A98DC243FEACB00BFD4A2 /* StateStack.cpp in Sources */,
 				90BF31A0242B4FAD003D0FAC /* Player.cpp in Sources */,
+				9063E9C2245D1D7E00A9616A /* Component.cpp in Sources */,
 				905E03172412FD2D003DEF24 /* Aircraft.cpp in Sources */,
 				906A98E2243FF01700BFD4A2 /* State.cpp in Sources */,
 				90234A4E242B4150002DF043 /* Command.cpp in Sources */,
