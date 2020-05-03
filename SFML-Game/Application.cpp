@@ -26,7 +26,11 @@ Application::Application()
     mWindow.setKeyRepeatEnabled(false);
 
     mFonts.load(Fonts::Main, "Sansation.ttf");
+    
     mTextures.load(Textures::TitleScreen, "TitleScreen.jpg");
+    mTextures.load(Textures::ButtonNormal, "ButtonNormal.png");
+    mTextures.load(Textures::ButtonSelected, "ButtonSelected.png");
+    mTextures.load(Textures::ButtonPressed, "ButtonPressed.png");
 
     mStatisticsText.setFont(mFonts.get(Fonts::Main));
     mStatisticsText.setPosition(5.f, 5.f);

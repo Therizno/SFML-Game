@@ -9,6 +9,10 @@
 #ifndef Utility_hpp
 #define Utility_hpp
 
+#include <SFML/Window/Keyboard.hpp>
+
+#include <string>
+
 namespace sf
 {
     class Sprite;
@@ -17,5 +21,7 @@ namespace sf
 
 void centerOrigin(sf::Sprite& sprite);
 void centerOrigin(sf::Text& text);
+
+std::string toString(sf::Keyboard::Key key);
 
 #endif /* Utility_hpp */
