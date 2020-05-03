@@ -14,6 +14,7 @@
 #include "Player.hpp"
 #include "TitleState.hpp"
 
+
 #include "World.hpp"
 
 class GameState : public State
@@ -28,6 +29,7 @@ class GameState : public State
     private:
         World mWorld;
         Player& mPlayer;
+
 };
 
 #endif /* GameState_hpp */

@@ -8,6 +8,7 @@
 
 #include "StateStack.hpp"
 
+
 StateStack::StateStack(State::Context context) : mStack(), mPendingList(), mContext(context), mFactories() { }
 
 

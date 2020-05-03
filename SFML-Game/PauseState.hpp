@@ -13,10 +13,12 @@
 
 #include "State.hpp"
 
+#include "Container.hpp"
+
 class PauseState : public State
 {
     public:
-        PauseState(StateStack& stack, Context& context);
+        PauseState(StateStack& stack, Context context);
         
         virtual void draw();
         virtual bool update(sf::Time dt);
@@ -26,6 +28,9 @@ class PauseState : public State
         sf::Sprite mBackgroundSprite;
         sf::Text mPausedText;
         sf::Text mInstructionText;
+        
+        
+        GUI::Container mGUIContainer;
 };
 
 #endif /* PauseState_hpp */
