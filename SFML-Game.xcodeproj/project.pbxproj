@@ -22,6 +22,7 @@
 		9063E9C2245D1D7E00A9616A /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C0245D1D7E00A9616A /* Component.cpp */; };
 		9063E9C5245D23A300A9616A /* Container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C3245D23A300A9616A /* Container.cpp */; };
 		9063E9C8245D3F6400A9616A /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C6245D3F6400A9616A /* Label.cpp */; };
+		9063E9CB245E6C8B00A9616A /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9063E9C9245E6C8B00A9616A /* Button.cpp */; };
 		906A98DC243FEACB00BFD4A2 /* StateStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906A98DA243FEACB00BFD4A2 /* StateStack.cpp */; };
 		906A98E2243FF01700BFD4A2 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906A98E0243FF01700BFD4A2 /* State.cpp */; };
 		90934E982445F46F00EE626C /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90934E962445F46F00EE626C /* Application.cpp */; };
@@ -66,6 +67,8 @@
 		9063E9C4245D23A300A9616A /* Container.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Container.hpp; sourceTree = "<group>"; };
 		9063E9C6245D3F6400A9616A /* Label.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Label.cpp; sourceTree = "<group>"; };
 		9063E9C7245D3F6400A9616A /* Label.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Label.hpp; sourceTree = "<group>"; };
+		9063E9C9245E6C8B00A9616A /* Button.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		9063E9CA245E6C8B00A9616A /* Button.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Button.hpp; sourceTree = "<group>"; };
 		906464BB243FFA57000DAEEA /* StateIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateIdentifiers.h; sourceTree = "<group>"; };
 		906A98DA243FEACB00BFD4A2 /* StateStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateStack.cpp; sourceTree = "<group>"; };
 		906A98DB243FEACB00BFD4A2 /* StateStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StateStack.hpp; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				9063E9C3245D23A300A9616A /* Container.cpp */,
 				9063E9C7245D3F6400A9616A /* Label.hpp */,
 				9063E9C6245D3F6400A9616A /* Label.cpp */,
+				9063E9CA245E6C8B00A9616A /* Button.hpp */,
+				9063E9C9245E6C8B00A9616A /* Button.cpp */,
 			);
 			path = "SFML-Game";
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				906A98E2243FF01700BFD4A2 /* State.cpp in Sources */,
 				90234A4E242B4150002DF043 /* Command.cpp in Sources */,
 				90234A52242B4A77002DF043 /* CommandQueue.cpp in Sources */,
+				9063E9CB245E6C8B00A9616A /* Button.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
